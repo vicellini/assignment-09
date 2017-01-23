@@ -21,6 +21,31 @@
 //  calcSpeedTicket(20, 30, false)
 //  => 150
 
+function calcSpeedTicket(val1, val2, val3){
+  // var clockedSpeed = function(val1, val2){
+  var speedAmount = val2 - val1
+  var fine
+    if(val2 <= (val1 + 5)){
+      fine = 0
+    }else if(speedAmount <= 20 ){
+      fine = 150
+    }else{
+      fine = 250
+    }
+  // }
+  // var zoneBonus = function(val3){
+  var multiplier = 1
+    if(val3 === true){
+      multiplier = 2
+    }
+  // }
+
+
+
+  var ticketTotal = fine * multiplier;
+  return ticketTotal;
+}
+
 
 
 

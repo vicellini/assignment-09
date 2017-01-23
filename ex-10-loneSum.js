@@ -7,7 +7,7 @@
 
 function loneSum(val1, val2, val3){
 
-  finalSum = val1 + val2 + val3;
+  var finalSum = val1 + val2 + val3;
 
   if (val1 === val2){
     finalSum = finalSum - val1 - val2;
